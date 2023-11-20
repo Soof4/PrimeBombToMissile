@@ -1,12 +1,16 @@
 ﻿using Terraria;
 using TerrariaApi.Server;
 using Microsoft.Xna.Framework;
+using TShockAPI;
+using Google.Protobuf.Reflection;
+using NuGet.Protocol.Plugins;
+using TShockAPI.Hooks;
 
 namespace BombToGrenade {
     [ApiVersion(2, 1)]
     public class BombToGrenade : TerrariaPlugin {
         public override string Name => "PrimeBombToMissile";
-        public override Version Version => new Version(1, 0, 1);
+        public override Version Version => new Version(1, 0, 2);
         public override string Author => "Soofa";
         public override string Description => "Changes Skeletron Prime's bombs to missiles.";
         static int ticks = 0;
@@ -14,16 +18,13 @@ namespace BombToGrenade {
         }
 
         public override void Initialize() {
+            TShockAPI.Hooks.GeneralHooks.ReloadEvent += OnReloadEvent;
             ServerApi.Hooks.GameUpdate.Register(this, OnGameUpdate);
-        }
-        protected override void Dispose(bool disposing) {
-            if (disposing) {
-                ServerApi.Hooks.GameUpdate.Deregister(this, OnGameUpdate);
-            }
-            base.Dispose(disposing);
+
+            TShock.Config.Settings.DisablePrimeBombs = true;
         }
 
-        void OnGameUpdate(EventArgs args) {
+        private void OnGameUpdate(EventArgs args) {
             foreach (var npc in Main.npc) {
                 if (npc.netID == 128 && npc.active) {
                     if (ticks == 100) {
@@ -37,5 +38,19 @@ namespace BombToGrenade {
                 }
             }
         }
+
+        private void OnReloadEvent(ReloadEventArgs args) {
+            TShock.Config.Settings.DisablePrimeBombs = true;
+        }
+
+        protected override void Dispose(bool disposing) {
+            if (disposing) {
+                ServerApi.Hooks.GameUpdate.Deregister(this, OnGameUpdate);
+                TShockAPI.Hooks.GeneralHooks.ReloadEvent -= OnReloadEvent;
+            }
+            base.Dispose(disposing);
+        }
+
+       
     }
 }
