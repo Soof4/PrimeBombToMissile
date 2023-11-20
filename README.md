@@ -1,4 +1,5 @@
 # PrimeBombToMissile
 A TShock plugin that spawns missiles instead of Prime bombs.
 
-Note: Make sure to set ``"DisablePrimeBombs"`` ``true`` in TShock's config.json file.
+## Setting up
+Just drop the **PrimeBombToMissile.dll** file to your **ServerPlugins** folder and you're done.
