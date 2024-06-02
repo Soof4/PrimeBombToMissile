@@ -1,0 +1,13 @@
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\bin\Debug\net6.0\HttpServer.dll
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\bin\Debug\net6.0\PrimeBombToMissile.deps.json
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\bin\Debug\net6.0\PrimeBombToMissile.dll
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\bin\Debug\net6.0\PrimeBombToMissile.pdb
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\obj\Debug\net6.0\PrimeBombToMissile.csproj.AssemblyReference.cache
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\obj\Debug\net6.0\PrimeBombToMissile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\obj\Debug\net6.0\PrimeBombToMissile.AssemblyInfoInputs.cache
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\obj\Debug\net6.0\PrimeBombToMissile.AssemblyInfo.cs
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\obj\Debug\net6.0\PrimeBombToMissile.csproj.CoreCompileInputs.cache
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\obj\Debug\net6.0\PrimeBombToMissile.dll
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\obj\Debug\net6.0\refint\PrimeBombToMissile.dll
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\obj\Debug\net6.0\PrimeBombToMissile.pdb
+C:\Users\Vanitas\Desktop\Plugins\PrimeBombToMissile\PrimeBombToMissile\obj\Debug\net6.0\ref\PrimeBombToMissile.dll
